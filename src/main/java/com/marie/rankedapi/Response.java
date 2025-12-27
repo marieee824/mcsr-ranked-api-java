@@ -1,8 +1,8 @@
 package com.marie.rankedapi;
 
 public class Response {
-    private String status;
-    private Object data;
+    private final String status;
+    private final Object data;
 
     public Response(String status, String data) {
         this.status = status;
@@ -10,10 +10,10 @@ public class Response {
     }
 
     public String getStatus() {
-        return status;
+        return this.status;
     }
 
     public String getData() {
-        return data.toString();
+        return this.data.toString();
     }
 }
